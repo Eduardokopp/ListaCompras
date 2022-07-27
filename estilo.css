@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr{
+    margin: 0px;
+}
+h1,h2,h3,h4,h5{
+    margin:0px;
+}
+
+.botao{
+    background-color: white;
+    color: black;
+    border: 1px;
+    border-radius: 5px;
+    width: 25%;
+  height: 40px;
+  font-size: auto;
+  
+
+}
+.botao:hover{
+    background-color: rgb(1, 46, 46);
+    color: aliceblue;
+}
+#categorias{
+    width: 50%;
+   
+}
+.cat{
+    margin-top: 10px;
+    padding: 5px;
+    background-color:#fff;
+    border-radius: 10px;
+    text-align: center;
+}
+#formulario{
+    border-radius: 15px 15px 0 0;
+    
+}
+#nome{
+    width: 50%;
+    border: none;
+    border-radius: 5px ;
+}
+
+.listas{
+    
+    background-color: #fff;
+    border-radius: 15px;
+    min-height: 300px;
+}

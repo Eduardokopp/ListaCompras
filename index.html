@@ -14,15 +14,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-        <!-- CSS e JS -->
+    <!-- CSS e JS -->
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
 
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Document</title>
 
 </head>
 
-<body class="bg-secondary">
+<body class="bg-secondary" onload="reload()">
 
     <div class="container bg-dark py-3 mt-2 ">
         <div class="container">
@@ -41,7 +43,7 @@
             </form>
 
             <div class=" text-center bg-danger">
-                <input type="button" value="Adicionar" onclick="add()" class="botao mb-3 "></input>
+                <input type="button" id="botao" value="Adicionar" onclick="add()" class="botao mb-3 "></input>
             </div>
             <div class="cat">
                 <h3>CATEGORIAS</h3>
@@ -51,32 +53,38 @@
 
                 <!-- LISTA DE CARNES -->
                 <div class="listas col my-4 mx-2">
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex justify-content-between align-items-center">
                         <h3>Carnes</h3>
-                        <hr>
+                        <i class="bi bi-trash text-danger" onclick="Limpar(1)"></i>
+
 
                     </div>
+                    <hr>
                     <div id="carne_list" class="px-3">
+
                         <!-- AQUI SERA GERADO UMA LI -->
+
                     </div>
                 </div>
                 <!-- LISTA DE FRUTAS -->
                 <div class="listas col my-4 mx-2">
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex justify-content-between align-items-center">
                         <h3>Frutas</h3>
-                        <hr>
+                        <i class="bi bi-trash text-danger" onclick="Limpar(2)"></i>
                     </div>
+                    <hr>
                     <div id="frutas_list" class="px-3">
                         <!-- AQUI SERA GERADO UMA LI -->
+
                     </div>
                 </div>
                 <!-- LISTA DE VERDURAS -->
                 <div class="listas col my-4 mx-2">
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex justify-content-between align-items-center">
                         <h3>Verduras</h3>
-                        <hr>
-
+                        <i class="bi bi-trash text-danger" onclick="Limpar(3)"></i>
                     </div>
+                    <hr>
 
                     <div id="verduras_list" class="px-3">
                         <!-- AQUI SERA GERADO UMA LI -->
@@ -85,14 +93,16 @@
 
                 <!-- Lista de graos -->
                 <div class="listas col my-4 mx-2">
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex justify-content-between align-items-center">
                         <h3>Grãos</h3>
-                        <hr>
-
+                        <i class="bi bi-trash text-danger" onclick="Limpar(4)"></i>
                     </div>
+                    <hr>
 
                     <div id="graos_list" class="px-3">
                         <!-- AQUI SERA GERADO UMA LI -->
+
+
                     </div>
                 </div>
 

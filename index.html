@@ -28,9 +28,9 @@
 
     <div class="container py-3 mt-2 " style="background-color: rgb(1, 46, 46);">
         <div class="container">
-            <form id="formulario" class="mt- p-3 d-flex ">
+            <form id="formulariozzzz" class="p-3 row">
 
-                <select name="" id="categorias" class="custom-select mr-1 ">
+                <select name="" id="categorias" class="form-group col-5 mx-1 ">
                     <option class="p-3" value="selecione">Selecione uma categoria</option>
                     <option class="p-3" value="carnes">Carnes</option>
                     <option class="p-3" value="frutas">frutas</option>
@@ -38,18 +38,18 @@
                     <option class="p-3" value="graos">graos</option>
                 </select>
 
-                <input type="text" id="nome" class="input-group ml-1 px-2 " placeholder="informe um item">
+                <input type="text" id="nome" class="form-group col-4 mx-1" placeholder="informe um item">
 
+                <input type="button" id="botao" value="Adicionar" onclick="add()" class="botao form-group col-2 mx-1"></input>
             </form>
 
-            <div class=" text-center" style="background-color: rgb(72, 128, 93);">
-                <input type="button" id="botao" value="Adicionar" onclick="add()" class="botao mb-3 "></input>
+            <div class=" text-center" style="background-color: rgb(255, 0, 0);">
             </div>
             <div class="cat">
                 <h3>CATEGORIAS</h3>
             </div>
 
-            <div class="d-flex">
+            <div class="row">
 
                 <!-- LISTA DE CARNES -->
                 <div class="listas col my-4 mx-2" >
